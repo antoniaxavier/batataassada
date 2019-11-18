@@ -1,0 +1,14 @@
+.memoria {
+    background: #eee;
+    max-width: 100%;
+}
+
+.cartao {
+    box-shadow: 2px 5px 1px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    flex: 1;
+    height: auto;
+    width: 17%;
+    margin: 1%;
+    transition: 700ms;
+}
