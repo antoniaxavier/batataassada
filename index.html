@@ -1,43 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <img src="images/memomat logo.png" alt="logo" style="clear: right" width="auto">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <script src="jogo.js"></script>
     <link  rel="stylesheet" type="text/css" href="style.css">
     <!-- <link  rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css"> -->
     <title> Memomat </title>
 </head>
-<body>
-    <div class="memoria">
+<body onload="inicializaJogo()">
+        <div class="memoria">
         <div class="row">
-            <img class="cartao" src="images/fundoCarta.png">
-            <img class="cartao" src="images/fundoCarta.png">
-            <img class="cartao" src="images/fundoCarta.png">
-            <img class="cartao" src="images/fundoCarta.png">
-            <img class="cartao" src="images/fundoCarta.png">
+         <img class="cartao" id="0" onClick="trocaValorCarta(this.id)" src="images/fundoCarta4.png" alt="JS Badge">
+        <!--<img class="frente-cartao" src="images/menor que.png">-->
+        <img class="cartao" id="1" onClick="trocaValorCarta(this.id)" src="images/fundoCarta4.png" alt="JS Badge">
+        <!--<img class="frente-cartao" src="images/divisaoOK.gif">-->
+        <img class="cartao" id="2" onClick="trocaValorCarta(this.id)" src="images/fundoCarta4.png" alt="JS Badge">
+         <!--<img class="frente-cartao" src="images/igualOK.gif">-->
+        <img class="cartao" id="3" onClick="trocaValorCarta(this.id)" src="images/fundoCarta4.png" alt="JS Badge">
+        <!--<img class="frente-cartao" src="images/maior queOK.gif">-->
+        <img class="cartao" id="4" onClick="trocaValorCarta(this.id)" src="images/fundoCarta4.png" alt="JS Badge">
+        <!--<img class="frente-cartao" src="images/menos.png">-->
         </div>
-        <div class="row">
-            <img class="cartao" src="images/fundoCarta.png">
-            <img class="cartao" src="images/fundoCarta.png">
-            <img class="cartao" src="images/fundoCarta.png">
-            <img class="cartao" src="images/fundoCarta.png">
-            <img class="cartao" src="images/fundoCarta.png">
+<br /> 
+         <div class="row">
+            <img class="cartao" id="5" onClick="trocaValorCarta(this.id)" src="images/fundoCarta4.png" alt="JS Badge">
+            <!--<img class="frente-cartao" src="images/pertence.png">-->
+            <img class="cartao" id="6" onClick="trocaValorCarta(this.id)" src="images/fundoCarta4.png" alt="JS Badge">
+            <!--<img class="frente-cartao" src="images/porcentagemOK.gif">-->
+            <img class="cartao" id="7" onClick="trocaValorCarta(this.id)" src="images/fundoCarta4.png" alt="JS Badge">
+            <!--<img class="frente-cartao" src="/images/nao pertence.png">-->
+            <img class="cartao" id="8" onClick="trocaValorCarta(this.id)" src="images/fundoCarta4.png" alt="JS Badge">
+            <!--<img class="frente-cartao" src="images/mais.png">-->
+            <img class="cartao" id="9" onClick="trocaValorCarta(this.id)" src="images/fundoCarta4.png" alt="JS Badge">
+            <!--<img class="frente-cartao" src="images/nao pertenceOK.gif">-->
         </div>
+        <br />
+        <div class="row">   
+                <img class="cartao" id="10" onClick="trocaValorCarta(this.id)" src="images/fundoCarta4.png" alt="JS Badge">
+                <!--<img class="frente-cartao" src="images/menor que.png">-->
+                <img class="cartao"  id="11" onClick="trocaValorCarta(this.id)" src="images/fundoCarta4.png" alt="JS Badge">
+                <!--<img class="frente-cartao" src="images/menor queOK.gif">-->
+                <img class="cartao"  id="12" onClick="trocaValorCarta(this.id)" src="images/fundoCarta4.png" alt="JS Badge">
+                <!--<img class="frente-cartao" src="images/maior que.png">-->
+                <img class="cartao" id="13" onClick="trocaValorCarta(this.id)" src="images/fundoCarta4.png" alt="JS Badge">
+                <!--<img class="frente-cartao" src="images/multiplicacaoOK.gif">-->
+                <img class="cartao" id="14" onClick="trocaValorCarta(this.id)" src="images/fundoCarta4.png" alt="JS Badge">
+                <!--<img class="frente-cartao" src="images/maisOK.gif">-->
+                </div>
+        <br />
         <div class="row">
-            <img class="cartao" src="images/fundoCarta.png">
-            <img class="cartao" src="images/fundoCarta.png">
-            <img class="cartao" src="images/fundoCarta.png">
-            <img class="cartao" src="images/fundoCarta.png">
-            <img class="cartao" src="images/fundoCarta.png">
+                <img class="cartao" id="15" onClick="trocaValorCarta(this.id)" src="images/fundoCarta4.png" alt="JS Badge">
+                <!--<img class="frente-cartao" src="images/multiplicacao.png">-->
+                <img class="cartao" id="16" onClick="trocaValorCarta(this.id)" src="images/fundoCarta4.png" alt="JS Badge">
+                <!--<img class="frente-cartao" src="images/menosOK.gif">-->
+                <img class="cartao" id="17" onClick="trocaValorCarta(this.id)" src="images/fundoCarta4.png" alt="JS Badge">
+                <!--<img class="frente-cartao" src="images/igual.png">-->
+                <img class="cartao" id="18" onClick="trocaValorCarta(this.id)" src="images/fundoCarta4.png" alt="JS Badge">
+                <!--<img class="frente-cartao" src="images/pertenceOK.gif">-->
+                <img class="cartao" id="19" onClick="trocaValorCarta(this.id)" src="images/fundoCarta4.png" alt="JS Badge">
+                <!--<img class="frente-cartao" src="images/porcentagem.png">-->
         </div>
-        <div class="row">
-            <img class="cartao" src="images/fundoCarta.png">
-            <img class="cartao" src="images/fundoCarta.png">
-            <img class="cartao" src="images/fundoCarta.png">
-            <img class="cartao" src="images/fundoCarta.png">
-            <img class="cartao" src="images/fundoCarta.png">
+        <br /> 
+        <div id="div_vitoria_memoria" style="display: none;">
+            <div id="texto_vitoria_memoria">
+              <CENTER> <img src="/images/ganhou.png" class="center" style="animation-delay: 2s;" width="1000px" height="auto"><br /></br /> Alunos: Antonia Xavier, Marcos Junior, Daniel Pinna<br> Profª: Tatiane Militão</center> 
+                <span class="horas"></span>''<span class="minutos"></span>'<span class="segundos"></span>
+                <br />
+                
+                </div>
+            </div>
         </div>
     </div>
     <!-- <script src="materialize/js/materialize.js"></script> -->
